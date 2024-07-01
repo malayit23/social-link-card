@@ -1,0 +1,104 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-Regular.ttf) format(truetype);
+    font-weight: regular;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf) format(truetype);
+    font-weight: semibold;
+}
+body{
+    background-color: var(--Off-Black);
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .container{
+    background-color: var(--Dark-Grey);
+    width: 330px;
+    height: auto;
+    border-radius: 10px;
+}
+.content{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--White);
+}
+img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 30px;
+}
+.name{
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.place{
+    color: var(--Green);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.descrip{
+    font-size: small;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px 0;
+}
+button{
+    padding: 12px 0 12px 0;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-size: small;
+    margin-bottom: 12px;
+}
+button:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+.attribution{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.attribution > a:hover{
+    color: var(--Green);
+}
+.attribution > a:active{
+    color: yellow;
+}
+.attribution > a{
+    color: skyblue;
+    text-decoration: none;
+}
